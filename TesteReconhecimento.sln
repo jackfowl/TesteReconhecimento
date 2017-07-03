@@ -1,0 +1,62 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TesteReconhecimento", "TesteReconhecimento\TesteReconhecimento.csproj", "{7DD32828-E89E-4DF1-A41F-307C4F9FD125}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Emgu.CV", "..\Emgu\Emgu.CV\Emgu.CV.shproj", "{12D024EE-D0A5-4BBC-B7C0-7B18CF1AB262}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Emgu.CV.Contrib", "..\Emgu\Emgu.CV.Contrib\Emgu.CV.Contrib.shproj", "{11E54A7E-778D-466C-A176-71E150976AC1}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Emgu.CV.Cuda", "..\Emgu\Emgu.CV.Cuda\Emgu.CV.Cuda.shproj", "{7B22BB32-C867-45A7-AC53-5BDA820DB91C}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Emgu.CV.OCR", "..\Emgu\Emgu.CV.OCR\Emgu.CV.OCR.shproj", "{7BC723CB-1678-415F-A65F-4027F8758A6F}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Emgu.Util", "..\Emgu\Emgu.Util\Emgu.Util.shproj", "{98561642-5EC3-4244-BAF9-6876D9BA5527}"
+EndProject
+Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		..\Emgu\Emgu.CV.Contrib\Emgu.CV.Contrib.projitems*{11e54a7e-778d-466c-a176-71e150976ac1}*SharedItemsImports = 13
+		..\Emgu\Emgu.CV\Emgu.CV.projitems*{12d024ee-d0a5-4bbc-b7c0-7b18cf1ab262}*SharedItemsImports = 13
+		..\Emgu\Emgu.CV.Cuda\Emgu.CV.Cuda.projitems*{7b22bb32-c867-45a7-ac53-5bda820db91c}*SharedItemsImports = 13
+		..\Emgu\Emgu.CV.OCR\Emgu.CV.OCR.projitems*{7bc723cb-1678-415f-a65f-4027f8758a6f}*SharedItemsImports = 13
+		..\Emgu\Emgu.CV.Contrib\Emgu.CV.Contrib.projitems*{7dd32828-e89e-4df1-a41f-307c4f9fd125}*SharedItemsImports = 4
+		..\Emgu\Emgu.CV.Cuda\Emgu.CV.Cuda.projitems*{7dd32828-e89e-4df1-a41f-307c4f9fd125}*SharedItemsImports = 4
+		..\Emgu\Emgu.CV.OCR\Emgu.CV.OCR.projitems*{7dd32828-e89e-4df1-a41f-307c4f9fd125}*SharedItemsImports = 4
+		..\Emgu\Emgu.CV\Emgu.CV.projitems*{7dd32828-e89e-4df1-a41f-307c4f9fd125}*SharedItemsImports = 4
+		..\Emgu\Emgu.Util\Emgu.Util.projitems*{7dd32828-e89e-4df1-a41f-307c4f9fd125}*SharedItemsImports = 4
+		..\Emgu\Emgu.Util\Emgu.Util.projitems*{98561642-5ec3-4244-baf9-6876d9ba5527}*SharedItemsImports = 13
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|ARM = Debug|ARM
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|ARM = Release|ARM
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7DD32828-E89E-4DF1-A41F-307C4F9FD125}.Debug|ARM.ActiveCfg = Debug|ARM
+		{7DD32828-E89E-4DF1-A41F-307C4F9FD125}.Debug|ARM.Build.0 = Debug|ARM
+		{7DD32828-E89E-4DF1-A41F-307C4F9FD125}.Debug|ARM.Deploy.0 = Debug|ARM
+		{7DD32828-E89E-4DF1-A41F-307C4F9FD125}.Debug|x64.ActiveCfg = Debug|x64
+		{7DD32828-E89E-4DF1-A41F-307C4F9FD125}.Debug|x64.Build.0 = Debug|x64
+		{7DD32828-E89E-4DF1-A41F-307C4F9FD125}.Debug|x64.Deploy.0 = Debug|x64
+		{7DD32828-E89E-4DF1-A41F-307C4F9FD125}.Debug|x86.ActiveCfg = Debug|x86
+		{7DD32828-E89E-4DF1-A41F-307C4F9FD125}.Debug|x86.Build.0 = Debug|x86
+		{7DD32828-E89E-4DF1-A41F-307C4F9FD125}.Debug|x86.Deploy.0 = Debug|x86
+		{7DD32828-E89E-4DF1-A41F-307C4F9FD125}.Release|ARM.ActiveCfg = Release|ARM
+		{7DD32828-E89E-4DF1-A41F-307C4F9FD125}.Release|ARM.Build.0 = Release|ARM
+		{7DD32828-E89E-4DF1-A41F-307C4F9FD125}.Release|ARM.Deploy.0 = Release|ARM
+		{7DD32828-E89E-4DF1-A41F-307C4F9FD125}.Release|x64.ActiveCfg = Release|x64
+		{7DD32828-E89E-4DF1-A41F-307C4F9FD125}.Release|x64.Build.0 = Release|x64
+		{7DD32828-E89E-4DF1-A41F-307C4F9FD125}.Release|x64.Deploy.0 = Release|x64
+		{7DD32828-E89E-4DF1-A41F-307C4F9FD125}.Release|x86.ActiveCfg = Release|x86
+		{7DD32828-E89E-4DF1-A41F-307C4F9FD125}.Release|x86.Build.0 = Release|x86
+		{7DD32828-E89E-4DF1-A41F-307C4F9FD125}.Release|x86.Deploy.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
