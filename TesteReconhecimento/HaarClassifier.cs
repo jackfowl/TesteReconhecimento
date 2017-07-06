@@ -58,22 +58,26 @@ namespace TesteReconhecimento
 
         public async Task<MemoryStream> GetImageWithMatches(string file)
         {
-            Mat mat = CvInvoke.Imread(file, ImreadModes.Color);
-            Task<MemoryStream> t = new Task<MemoryStream>(() => DrawMatches(mat));
-            t.Start();
-            var taskResult = await t;
-            return taskResult;
+            using (Mat mat = CvInvoke.Imread(file, ImreadModes.Color))
+            {
+                Task<MemoryStream> t = new Task<MemoryStream>(() => DrawMatches(mat));
+                t.Start();
+                var taskResult = await t;
+                return taskResult;
+            }
         }
 
         public async Task<MemoryStream> GetImageWithMatches(MemoryStream image)
         {
             byte[] data = image.ToArray();
-            Mat mat = new Mat();
-            CvInvoke.Imdecode(data, ImreadModes.Color, mat);
-            Task<MemoryStream> t = new Task<MemoryStream>(() => DrawMatches(mat));
-            t.Start();
-            var taskResult = await t;
-            return taskResult;
+            using (Mat mat = new Mat())
+            {
+                CvInvoke.Imdecode(data, ImreadModes.Color, mat);
+                Task<MemoryStream> t = new Task<MemoryStream>(() => DrawMatches(mat));
+                t.Start();
+                var taskResult = await t;
+                return taskResult;
+            }
         }
 
         public Rectangle[] GetMatches(string file)

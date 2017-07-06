@@ -20,7 +20,7 @@
         <TextBox x:Name="txtScale" InputScope="Number" Margin="0" TextWrapping="Wrap" Text="1,1" VerticalAlignment="Top" HorizontalContentAlignment="Left" PlaceholderText="Scale" AutomationProperties.Name="" RelativePanel.Below="tbScale" RelativePanel.AlignTopWith="" RelativePanel.AlignLeftWithPanel="True" Width="50" />
         <TextBlock x:Name="tbNeighboors"  RelativePanel.Below="cbClassifier" TextWrapping="Wrap" Text="Neighboors" VerticalAlignment="Top" Margin="82,0,0,0" HorizontalAlignment="Left" />
         <TextBox x:Name="txtNeighboors" InputScope="Number" Margin="82,0,-72,0" TextWrapping="Wrap" Text="3" HorizontalContentAlignment="Left" PlaceholderText="Neighboors" RelativePanel.Below="tbNeighboors" Padding="10,3,6,5" RelativePanel.LeftOf="" RelativePanel.RightOf="" RelativePanel.AlignLeftWith=""/>
-        <TextBlock x:Name="tbImages"  RelativePanel.Below="txtScale" HorizontalAlignment="Left" Height="20" TextWrapping="Wrap" Text="Scale" VerticalAlignment="Top" Width="61.6666679382324" />
+        <TextBlock x:Name="tbImages"  RelativePanel.Below="txtScale" HorizontalAlignment="Left" Height="20" TextWrapping="Wrap" Text="Image" VerticalAlignment="Top" Width="61.6666679382324" />
         <ComboBox x:Name="cbImages" HorizontalAlignment="Stretch" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" PlaceholderText="Select an image" RelativePanel.Below="tbImages" RelativePanel.AlignRightWithPanel="True" RelativePanel.AlignLeftWithPanel="True" Margin="0">
             <ComboBox.ItemTemplate>
                 <DataTemplate>

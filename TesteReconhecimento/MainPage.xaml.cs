@@ -95,7 +95,7 @@ namespace TesteReconhecimento
                         if (_capture == null)
                             _capture = new VideoCapture();
 
-                        _capture.Read(m); //WHY EMPTY
+                        _capture.Read(m); //WHY THIS BECOME EMPTY
 
                         if (!m.IsEmpty)
                         {
@@ -110,6 +110,11 @@ namespace TesteReconhecimento
                             //The data in the mat that is read from the camera will 
                             //be drawn to the Image control
                             CvInvoke.WinrtImshow();
+                        }
+                        else
+                        {
+                            MessageDialog msg = new MessageDialog("Mat is empty");
+                            msg.ShowAsync();
                         }
                     }
                     catch (Exception e)
